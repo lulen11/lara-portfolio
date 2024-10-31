@@ -1,0 +1,35 @@
+@import "../styles/globals.module.scss";
+
+.layout {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $primary-green;
+}
+
+.boops h1 {
+  @include bodyFont;
+  font-size: 5rem;
+  color: $primary-red;
+  font-weight: 900;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  gap: 16px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
