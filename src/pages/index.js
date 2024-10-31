@@ -1,10 +1,8 @@
 import React from "react";
 import Layout from "@/layouts/Layout";
 import Image from "next/image";
-// import Link from "next/link";
 import ProjectList from "../components/ProjectList";
-// import "../styles/globals.scss";
-import projects from "./projectsContent"; // Adjust the path as necessary
+import projects from "./projectsContent";
 
 import styles from "./Home.module.scss";
 
@@ -14,20 +12,6 @@ export const metadata = {
 };
 
 const Home = () => {
-  // export default function Home() {
-  // const projects = [
-  //   {
-  //     id: "code-like-a-girl",
-  //     title: "CLG",
-  //     description: "Description of Project 1",
-  //   },
-  //   {
-  //     id: "project2",
-  //     title: "Project 2",
-  //     description: "Description of Project 2",
-  //   },
-  // ];
-
   return (
     <Layout title="Home woo" className={styles.home}>
       <h1>boop</h1>
@@ -47,7 +31,6 @@ const Home = () => {
           <li>Hello again, Lara!</li>
         </ol>
         <ProjectList projects={projects} />
-        {/* </main> */}
       </div>
     </Layout>
   );

@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import styles from "./Layout.module.scss";
 
 const Layout = ({ children, title, className }) => {
+  useEffect(() => {
+    document.body.classList.add(styles.layout);
+
+    return () => {
+      document.body.classList.remove(styles.layout);
+    };
+  }, []);
+
   return (
     <>
       <Head>
