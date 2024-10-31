@@ -1,0 +1,41 @@
+// // @use "./_colours" as colours;
+// @use "../styles/colours" as colours;
+// @use "./_typography" as typography;
+// @use "./colours" as colours;
+// @use "./typography" as typography;
+
+.layout {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  .layout {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.layout {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// *** GLOBAL VARIABLES ***
+// TODO: move these into individual files
+
+// breakpoints
+// $sm: 40rem; //640px
+// $sm-md: 52rem; //832px
+// $md: 64rem; //1024px
+// $md-lg: 80rem; //1285px
+// $lg: 100rem; //1600px
+// $xl: 150rem; //2400px
+
+// $page-wrapper: $lg;
+
+// interactions
+// $smooth-transition: all 0.2s ease-in-out;
