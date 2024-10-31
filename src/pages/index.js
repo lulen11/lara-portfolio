@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@/layouts/Layout";
 import Image from "next/image";
 import ProjectList from "../components/ProjectList";
-import projects from "./projectsContent";
+import projects from "../content/projectsContent";
 
 import styles from "./Home.module.scss";
 
