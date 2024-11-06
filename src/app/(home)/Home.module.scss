@@ -1,8 +1,7 @@
 @use "../../styles/globals" as globals;
 
 .home {
-  border: 10px solid yellowgreen;
   .intro {
-    @include globals.headingFont;
+    @include globals.headingFontLarge;
   }
 }

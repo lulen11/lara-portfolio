@@ -1,0 +1,64 @@
+@use "../../styles/globals" as globals;
+
+.project {
+  margin: 1rem 0;
+  &List {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  &Name {
+    @include globals.headingFontMedium;
+    text-decoration: none;
+  }
+
+  &Thumb {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: -6rem;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:nth-child(2n),
+  &:nth-child(4n) {
+    .projectThumb {
+      bottom: -1rem;
+      right: -16rem;
+    }
+    &:hover .projectName {
+      color: globals.$tangerine-red;
+    }
+  }
+
+  &:nth-child(3n) {
+    .projectThumb {
+      bottom: 3rem;
+      right: -26rem;
+    }
+    &:hover .projectName {
+      color: globals.$ocean;
+    }
+  }
+
+  &:nth-child(5n) {
+    .projectThumb {
+      bottom: -3rem;
+      right: 0rem;
+    }
+    &:hover .projectName {
+      color: globals.$botanical-green;
+    }
+  }
+}
+
+.project:hover {
+  .projectName {
+    color: globals.$candy;
+  }
+  .projectThumb {
+    opacity: 1;
+  }
+}
