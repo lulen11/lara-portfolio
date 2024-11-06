@@ -14,11 +14,16 @@ export const metadata = {
 const Home = () => {
   return (
     <Layout title="Home woo" className={styles.home}>
-      <h1>boop</h1>
       <div>
-        <h1>Oh my</h1>
+        <h1 className={styles.intro}>
+          Hi, saans is a sands-serif typeface designed by Martin Vácha and
+          published through Displaay Type Foundry in 2023. It was created as a
+          “neutral” addition to their type library. The family is available in
+          six weights with matching italics, as well as mono and semi-mono
+          styles.
+        </h1>
         <Image
-          src="/images/bird-initials@2x.png"
+          src="/images/trio.svg"
           alt="Bird"
           width={180}
           height={190}
@@ -28,7 +33,6 @@ const Home = () => {
           <li>Get started by editing .</li>
           <li>Save and see your changes instantly.</li>
           <li>Hi Lara!</li>
-          <li>Hello again, Lara!</li>
         </ol>
         <ProjectList projects={projects} />
       </div>

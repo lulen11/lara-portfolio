@@ -1,0 +1,85 @@
+@use "../../styles/colours" as colours;
+@use "../../styles/typography" as typography;
+@use "../../styles/motion" as motion;
+@use "../../styles/breakpoints" as breakpoints;
+
+@keyframes dizzyColors {
+  0%,
+  100% {
+    color: colours.$tangerine-red;
+  }
+  25% {
+    color: colours.$candy;
+  }
+  50% {
+    color: colours.$olive;
+  }
+  75% {
+    color: colours.$ocean;
+  }
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &Name,
+  &Contact {
+    font-family: typography.$sans-serif-font;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: colours.$forest-black;
+    @media only screen and (min-width: breakpoints.$sm-md) {
+      display: inline-block;
+    }
+
+    strong {
+      position: relative;
+      font-weight: 100;
+      margin: 0.25rem 0 0;
+      padding-left: 0.75rem;
+      @media only screen and (min-width: breakpoints.$sm-md) {
+        margin: 0 1.25rem;
+        padding-left: 2.5rem;
+      }
+      &::before {
+        position: absolute;
+        content: " / ";
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 0;
+        // top: 0.25rem;
+
+        // display: none;
+        @media only screen and (min-width: breakpoints.$sm-md) {
+          display: block;
+          background: url("/images/scribble.svg") no-repeat transparent 0 0 /
+            contain;
+          top: -0.15rem;
+        }
+      }
+    }
+  }
+  &Name {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: breakpoints.$sm-md) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &Contact {
+    text-decoration: none;
+    transition: motion.$smooth-transition;
+    animation: dizzyColors 5s ease-in-out infinite;
+    &:hover {
+      color: colours.$tangerine-red;
+    }
+  }
+}

@@ -3,23 +3,12 @@
 
 .layout {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   min-height: 100vh;
-  background-color: colours.$primary-green;
-}
-
-.boops h1 {
-  @include typography.bodyFont;
-  font-size: 5rem;
-  color: colours.$primary-red;
-  font-weight: 900;
-}
-
-.header {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  text-align: center;
+  background-color: colours.$cream;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .main {

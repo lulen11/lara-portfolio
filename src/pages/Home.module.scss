@@ -1,5 +1,9 @@
-// @use "../styles/colours" as colours;
+@use "../styles/colours" as colours;
+@use "../styles/typography" as typography;
 
 .home {
   border: 10px solid yellowgreen;
+  .intro {
+    @include typography.headingFont;
+  }
 }
