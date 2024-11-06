@@ -1,14 +1,14 @@
 // projectsData.js
 const projects = {
   "code-like-a-girl": {
-    title: "Project 1",
+    title: "Code Like a Girl",
     description: "Detailed description of Projects 1",
-    image: "/images/project1.jpg",
+    image: "/images/trio.svg",
   },
-  project2: {
-    title: "Project 2",
-    description: "Detailed description of Projects 2",
-    image: "/images/project2.jpg",
+  "verve-super": {
+    title: "Verve Super",
+    description: "Detailed description of Verve Super",
+    image: "/images/projects/thumb-verve@2x.jpg",
   },
 };
 
