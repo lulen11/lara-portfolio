@@ -24,11 +24,11 @@ const Layout = ({ children, title, className }) => {
       <div className={`${styles.layout} ${className}`}>
         <Header />
 
-        <main>
+        <main className={styles.main}>
           <div>{children}</div>
         </main>
 
-        <footer>
+        <footer className={styles.footer}>
           <p>© 2024 My Portfolio</p>
         </footer>
       </div>

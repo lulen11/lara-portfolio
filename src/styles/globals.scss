@@ -1,3 +1,9 @@
+// global.scss
+@forward "colours";
+@forward "typography";
+@forward "motion";
+@forward "breakpoints";
+
 .layout {
   --background: #ffffff;
   --foreground: #171717;

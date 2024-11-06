@@ -1,9 +1,8 @@
-@use "../styles/colours" as colours;
-@use "../styles/typography" as typography;
+@use "../styles/globals" as globals;
 
 .home {
   border: 10px solid yellowgreen;
   .intro {
-    @include typography.headingFont;
+    @include globals.headingFont;
   }
 }
