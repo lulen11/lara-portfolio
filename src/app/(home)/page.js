@@ -16,16 +16,17 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1 className={styles.intro}>
-        Hello! My name's Lara. I'm a frontend designer. I've spent the last 10
-        years working in a special middle-ground between design & development. I
-        design user experiences and bring those designs to life through frontend
-        code. My specialities lay within UX design and frontend development,
-        with lots of experience in web, app & product design, as well as
-        start-up consulting. I work remotely, based in Melbourne, Australia.
+        Hello! My name&apos;s Lara. I&apos;m a frontend designer. I&apos;ve
+        spent the last 10 years working in a special middle-ground between
+        design & development. I design user experiences and bring those designs
+        to life through frontend code. My specialities lay within UX design and
+        frontend development, with lots of experience in web, app & product
+        design, as well as start-up consulting. I work remotely, based in
+        Melbourne, Australia.
         <span>
-          I'm mid-build on this portfolio so I've adapted it a little to share
-          with you here while I finish it off elsewhere. Please forgive the
-          imperfections!
+          I&apos;m mid-build on this portfolio so I&apos;ve adapted it a little
+          to share with you here while I finish it off elsewhere. Please forgive
+          the imperfections!
         </span>
         {/* For the past 10 years between marketing agencies, freelance, and a
         not-for-profit, I’ve worked in what I think is a pretty special
