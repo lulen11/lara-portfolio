@@ -1,7 +1,30 @@
 @use "../../styles/globals" as globals;
 
 .home {
+  margin-top: 9rem;
+  @media only screen and (min-width: globals.$md) {
+    width: 80%;
+    margin-top: 10rem;
+  }
+  @media only screen and (min-width: globals.$lg) {
+    width: 70%;
+    max-width: globals.$md-lg;
+  }
   .intro {
     @include globals.headingFontLarge;
+  }
+}
+
+.intro,
+.projectList {
+  position: relative;
+  @media only screen and (min-width: globals.$sm-md) {
+    margin-left: 2.5rem;
+  }
+}
+
+.projectList {
+  @media only screen and (max-width: globals.$sm-md) {
+    margin-top: 4rem;
   }
 }

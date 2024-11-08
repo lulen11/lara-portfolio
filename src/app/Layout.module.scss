@@ -10,14 +10,8 @@
 }
 
 .main {
-  padding: 1rem;
-  @media only screen and (min-width: globals.$md) {
-    width: 80%;
-  }
-  @media only screen and (min-width: globals.$lg) {
-    width: 70%;
-    max-width: globals.$md-lg;
-  }
+  padding: 0;
+  overflow: hidden;
 }
 
 .footer {

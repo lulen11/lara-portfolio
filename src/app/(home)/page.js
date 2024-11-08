@@ -16,11 +16,30 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1 className={styles.intro}>
-        Hi, saans is a sands-serif typeface designed by Martin Vácha and
-        published through Displaay Type Foundry in 2023. It was created as a
-        “neutral” addition to their type library.
+        Hello! My name's Lara. I'm a frontend designer. I've spent the last 10
+        years working in a special middle-ground between design & development. I
+        design user experiences and bring those designs to life through frontend
+        code. My specialities lay within UX design and frontend development,
+        with lots of experience in web, app & product design, as well as
+        start-up consulting. I work remotely, based in Melbourne, Australia.
+        <span>
+          I'm mid-build on this portfolio so I've adapted it a little to share
+          with you here while I finish it off elsewhere. Please forgive the
+          imperfections!
+        </span>
+        {/* For the past 10 years between marketing agencies, freelance, and a
+        not-for-profit, I’ve worked in what I think is a pretty special
+        middle-ground between design & development. As a frontend designer, I
+        spend my days collaborating with great teams to design user experiences
+        and then bring those designs to life through frontend code. My
+        specialities lay within UX design and frontend development, with lots of
+        experience in web, app & product design, branding, seo and start-up
+        consulting. I work remotely, based in Melbourne, Australia. Call +61 424
+        578 459, or write to me at hello@larasalameh.com anytime. */}
       </h1>
-      <ProjectList projects={projects} />
+      <div className={styles.projectList}>
+        <ProjectList projects={projects} />
+      </div>
     </div>
   );
 };

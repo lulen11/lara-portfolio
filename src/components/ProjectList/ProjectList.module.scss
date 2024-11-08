@@ -1,7 +1,11 @@
 @use "../../styles/globals" as globals;
 
 .project {
+  //   overflow: hidden;
   margin: 1rem 0;
+  transition: globals.$smooth-transition;
+  position: relative;
+
   &List {
     position: relative;
     list-style: none;
@@ -12,21 +16,39 @@
   &Name {
     @include globals.headingFontMedium;
     text-decoration: none;
+    z-index: 0;
+    position: relative;
   }
 
   &Thumb {
     opacity: 0;
     position: absolute;
-    bottom: 0;
-    right: -6rem;
-    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+    top: 0;
+    left: 0rem;
+    transition: opacity 0.5s ease-in-out, transform 0.1s ease-out;
+    height: 30rem;
+    width: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    @media only screen and (min-width: globals.$md) {
+      right: -40rem;
+    }
   }
 
   &:nth-child(2n),
   &:nth-child(4n) {
     .projectThumb {
       bottom: -1rem;
-      right: -16rem;
+
+      @media only screen and (min-width: globals.$md) {
+        right: -16rem;
+      }
     }
     &:hover .projectName {
       color: globals.$tangerine-red;
@@ -36,7 +58,9 @@
   &:nth-child(3n) {
     .projectThumb {
       bottom: 3rem;
-      right: -26rem;
+      @media only screen and (min-width: globals.$md) {
+        right: -26rem;
+      }
     }
     &:hover .projectName {
       color: globals.$ocean;

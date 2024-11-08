@@ -2,13 +2,29 @@
 const projects = {
   "code-like-a-girl": {
     title: "Code Like a Girl",
-    description: "Detailed description of Projects 1",
-    image: "/images/trio.svg",
+    description:
+      "It's been a dream working at CLG. Maintain & update main site on Gatsby, design new pages for upcoming events (e.g., Virtual Engineering Summit).",
+    images: [
+      "product-partners.jpg",
+      "product-partners2.jpg",
+      "product2.jpg",
+      "product1.jpg",
+      "website-home.jpg",
+      "social-post.jpg",
+      "social-post2.jpg",
+      "website-tab.jpg",
+      "website-how1.jpg",
+      "website-jobs.jpg",
+      "website-how2.jpg",
+      "website-vcf.jpg",
+      "website-vcf2.jpg",
+    ],
   },
   "verve-super": {
     title: "Verve Super",
-    description: "Detailed description of Verve Super",
-    image: "/images/projects/thumb-verve@2x.jpg",
+    description:
+      "Working on Verve Super, was a freelance project focused on UX support and frontend development for a colleague-led UI project.",
+    image: "thumb-verve@2x.jpg",
   },
   airtime: {
     title: "Airtime",
