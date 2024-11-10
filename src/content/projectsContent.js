@@ -4,6 +4,7 @@ const projects = {
     title: "Code Like a Girl",
     description:
       "It's been a dream working at CLG. Maintain & update main site on Gatsby, design new pages for upcoming events (e.g., Virtual Engineering Summit).",
+    thumbImage: "thumb-clg@2x.png",
     images: [
       "product-partners.jpg",
       "product-partners2.jpg",
@@ -24,27 +25,27 @@ const projects = {
     title: "Verve Super",
     description:
       "Working on Verve Super, was a freelance project focused on UX support and frontend development for a colleague-led UI project.",
-    image: "thumb-verve@2x.jpg",
+    thumbImage: "thumb-verve@2x.png",
   },
   airtime: {
     title: "Airtime",
     description: "Detailed description of Airtime",
-    image: "/images/trio.svg",
+    thumbImage: "thumb-airtime@2x.png",
   },
   "aime-mentoring": {
     title: "AIME Mentoring",
     description: "Detailed description of AIME",
-    image: "/images/trio.svg",
+    thumbImage: "thumb-aime@2x.png",
   },
   bwf: {
     title: "Byron Writers Fest",
     description: "Detailed description of BWF",
-    image: "/images/trio.svg",
+    thumbImage: "thumb-bwf@2x.png",
   },
   worthy: {
     title: "Worthy",
     description: "Detailed description of Worthy",
-    image: "/images/trio.svg",
+    thumbImage: "thumb-worthy@2x.png",
   },
 };
 

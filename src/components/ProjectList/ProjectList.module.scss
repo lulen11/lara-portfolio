@@ -24,11 +24,15 @@
     opacity: 0;
     position: absolute;
     z-index: -1;
-    top: 0;
-    left: 0rem;
+    // top: 0;
+    // left: 0rem;
     transition: opacity 0.5s ease-in-out, transform 0.1s ease-out;
     height: 30rem;
     width: auto;
+
+    margin-right: -18rem;
+    left: 26rem;
+    bottom: -10rem;
 
     img {
       width: 100%;
@@ -37,7 +41,7 @@
     }
 
     @media only screen and (min-width: globals.$md) {
-      right: -40rem;
+      // right: -40rem;
     }
   }
 
@@ -47,7 +51,7 @@
       bottom: -1rem;
 
       @media only screen and (min-width: globals.$md) {
-        right: -16rem;
+        // right: -16rem;
       }
     }
     &:hover .projectName {
@@ -59,7 +63,7 @@
     .projectThumb {
       bottom: 3rem;
       @media only screen and (min-width: globals.$md) {
-        right: -26rem;
+        // right: -26rem;
       }
     }
     &:hover .projectName {
@@ -69,8 +73,8 @@
 
   &:nth-child(5n) {
     .projectThumb {
-      bottom: -3rem;
-      right: 0rem;
+      // bottom: -3rem;
+      // right: 0rem;
     }
     &:hover .projectName {
       color: globals.$botanical-green;

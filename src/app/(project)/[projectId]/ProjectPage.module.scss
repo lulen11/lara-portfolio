@@ -4,7 +4,7 @@
   &Page {
     margin: 0;
     margin-top: 5rem;
-    background-color: globals.$cloud-grey;
+    // background-color: globals.$cloud-grey;
     @media only screen and (min-width: globals.$md) {
       margin-top: 10rem;
     }
@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: globals.$cloud-grey;
+    // background-color: globals.$cloud-grey;
     padding: 2rem;
     max-width: globals.$page-wrapper;
     margin: 0 auto;

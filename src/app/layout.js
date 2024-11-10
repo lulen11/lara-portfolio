@@ -9,12 +9,16 @@ export const metadata = {
     icon: "/images/favicon@2x.ico",
   },
 };
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, projectId }) {
   return (
     <>
       <html lang="en">
-        <body className={`${styles.layout}`}>
-          <Header />
+        <body
+          className={`${styles.layout} ${
+            projectId ? styles[`project-${projectId}`] : ""
+          }`}
+        >
+          <Header projectId={projectId} />
           <main className={styles.main}>
             <div>{children}</div>
           </main>

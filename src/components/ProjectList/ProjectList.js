@@ -43,7 +43,10 @@ export default function ProjectList({ projects }) {
           </Link>
           {/* <p>{projects[key].description}</p> */}
           <div className={styles.projectThumb}>
-            <Image
+            <img
+              src={`/images/projects/${projects[key].thumbImage}`} // Construct the path dynamically
+            />
+            {/* <Image
               src={projects[key].image}
               alt="Project Thumb"
               sizes="300px"
@@ -51,7 +54,7 @@ export default function ProjectList({ projects }) {
               style={{
                 objectFit: "contain",
               }}
-            />
+            /> */}
           </div>
         </li>
       ))}

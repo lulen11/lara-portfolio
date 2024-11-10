@@ -4,7 +4,7 @@ import React from "react";
 
 import styles from "./Header.module.scss";
 
-export default function Header() {
+export default function Header({ projectId }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,11 @@ export default function Header() {
     };
   }, []);
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+    <header
+      className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${
+        styles.layout
+      } ${projectId ? styles[`project-${projectId}`] : ""}`}
+    >
       <div className={styles.headerWrapper}>
         <h1 className={styles.headerName}>
           <strong>Lara Salameh</strong>

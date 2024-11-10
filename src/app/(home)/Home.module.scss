@@ -3,11 +3,11 @@
 .home {
   margin-top: 9rem;
   @media only screen and (min-width: globals.$md) {
-    width: 80%;
+    width: 90%;
     margin-top: 10rem;
   }
   @media only screen and (min-width: globals.$lg) {
-    width: 70%;
+    width: 80%;
     max-width: globals.$md-lg;
   }
   .intro {
