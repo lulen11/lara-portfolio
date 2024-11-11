@@ -101,6 +101,33 @@
       }
     }
   }
+
+  &Links {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    @media only screen and (min-width: globals.$sm-md) {
+      display: flex;
+    }
+
+    li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.25rem 1rem 0.1rem 0;
+      margin-right: 0.75rem;
+      font-family: globals.$sans-serif-font;
+      font-size: 0.9rem;
+      font-weight: 100;
+      line-height: 1.4;
+      transition: globals.$smooth-transition;
+      color: globals.$forest-black;
+
+      &:hover {
+        color: globals.$olive;
+        border-bottom: 1.25px solid globals.$olive;
+      }
+    }
+  }
 }
 .nextProjectLink {
   position: fixed;

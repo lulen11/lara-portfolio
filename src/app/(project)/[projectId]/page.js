@@ -42,16 +42,16 @@ export default function ProjectPage({ params }) {
                   View another project <span>&#10549;</span>
                 </Link>
               </div>
+              {project.links && (
+                <ul className={styles.projectLinks}>
+                  {project.links.map((link, index) => (
+                    <li key={index}>
+                      <Link href={link.url}>{link.text}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-            {project.links && (
-              <ul className={styles.projectLinks}>
-                {project.links.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.url}>{link.text}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
             <div className={styles.projectImages}>
               {project.images && project.images.length > 0 ? (
                 project.images.map((image, index) => (
