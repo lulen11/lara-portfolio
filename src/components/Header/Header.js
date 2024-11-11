@@ -2,7 +2,7 @@
 import TypedHeading from "../../components/TypedHeading/TypedHeading";
 import { useState, useEffect } from "react";
 import React from "react";
-
+import Link from "next/link";
 import styles from "./Header.module.scss";
 
 export default function Header({ projectId }) {
@@ -28,12 +28,12 @@ export default function Header({ projectId }) {
     >
       <div className={styles.headerWrapper}>
         <h1 className={styles.headerName}>
-          <a href="/">
+          <Link href="/">
             <strong>Lara Salameh</strong>
             <span>&nbsp;</span>
 
             <TypedHeading />
-          </a>
+          </Link>
         </h1>
         <a
           href="mailto:hello@larasalameh.com?subject=Hi,%20I%20like%20what%20I%20see"
