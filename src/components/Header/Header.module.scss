@@ -73,14 +73,19 @@
       }
     }
   }
-  &Name {
+  &Name a {
     display: flex;
     flex-direction: column;
 
     position: relative;
+    text-decoration: none;
+    color: inherit;
     @media only screen and (min-width: globals.$sm-md) {
       flex-direction: row;
       align-items: center;
+    }
+
+    a {
     }
   }
 

@@ -1,5 +1,6 @@
-import styles from "./Layout.module.scss";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import styles from "./Layout.module.scss";
 // import PageTransition from "@/components/PageTransition/PageTransition";
 
 export const metadata = {
@@ -22,9 +23,7 @@ export default function RootLayout({ children, projectId }) {
           <main className={styles.main}>
             <div>{children}</div>
           </main>
-          <footer className={styles.footer}>
-            <p>© 2024 My Portfolio</p>
-          </footer>
+          <Footer />
           {/* <PageTransition /> */}
         </body>
       </html>

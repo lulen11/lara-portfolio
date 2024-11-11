@@ -28,12 +28,17 @@ export default function Header({ projectId }) {
     >
       <div className={styles.headerWrapper}>
         <h1 className={styles.headerName}>
-          <strong>Lara Salameh</strong>
-          <span>&nbsp;</span>
+          <a href="/">
+            <strong>Lara Salameh</strong>
+            <span>&nbsp;</span>
 
-          <TypedHeading />
+            <TypedHeading />
+          </a>
         </h1>
-        <a href="mailto:hello@larasalameh.com" className={styles.headerContact}>
+        <a
+          href="mailto:hello@larasalameh.com?subject=Hi,%20I%20like%20what%20I%20see"
+          className={styles.headerContact}
+        >
           hello@larasalameh.com
         </a>
       </div>
