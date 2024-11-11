@@ -68,7 +68,7 @@ export default function ProjectPage({ params }) {
             </div>
             <div className={`${styles.nextProjectLink} ${styles.bottomLink}`}>
               <Link href={`/${nextProjectId}`}>
-                See something else I've worked on <span>&#x27F6;</span>
+                See something else I&apos;ve worked on <span>&#x27F6;</span>
               </Link>
             </div>
           </>
