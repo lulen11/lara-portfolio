@@ -21,10 +21,14 @@ const projects = {
       "website-vcf2.jpg",
     ],
     links: [
-      { text: "Visit Code Like a Girl", url: "https://www.codelikeagirl.com" },
+      { text: "Visit the website", url: "https://www.codelikeagirl.com" },
       {
-        text: "Event Page",
-        url: "https://www.codelikeagirl.com/virtual-summit",
+        text: "I wrote a couple of coding courses too",
+        url: "https://learnto.codelikeagirl.com/navigating-javascript",
+      },
+      {
+        text: "Check out the GitHub repos",
+        url: "https://www.codelikeagirl.com",
       },
     ],
   },

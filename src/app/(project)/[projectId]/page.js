@@ -66,6 +66,11 @@ export default function ProjectPage({ params }) {
                 <p>No images available for this project.</p>
               )}
             </div>
+            <div className={`${styles.nextProjectLink} ${styles.bottomLink}`}>
+              <Link href={`/${nextProjectId}`}>
+                See something else I've worked on <span>&#x27F6;</span>
+              </Link>
+            </div>
           </>
         ) : (
           <h1>Project not found</h1>
