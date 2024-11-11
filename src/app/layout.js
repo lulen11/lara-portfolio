@@ -1,6 +1,6 @@
 import styles from "./Layout.module.scss";
 import Header from "@/components/Header/Header";
-import PageTransition from "@/components/PageTransition/PageTransition";
+// import PageTransition from "@/components/PageTransition/PageTransition";
 
 export const metadata = {
   title: "Lara Salameh's Great and Good Portfolio",
@@ -25,7 +25,7 @@ export default function RootLayout({ children, projectId }) {
           <footer className={styles.footer}>
             <p>© 2024 My Portfolio</p>
           </footer>
-          <PageTransition />
+          {/* <PageTransition /> */}
         </body>
       </html>
     </>

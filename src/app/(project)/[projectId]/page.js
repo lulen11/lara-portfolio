@@ -1,6 +1,6 @@
 import projects from "../../../content/projectsContent";
 import styles from "./ProjectPage.module.scss";
-import RootLayout from "@/app/layout";
+// import RootLayout from "@/app/layout";
 
 export async function generateMetadata({ params }) {
   const { projectId } = params;
@@ -19,7 +19,8 @@ export default function ProjectPage({ params }) {
   const project = projects[projectId];
 
   return (
-    <RootLayout projectId={projectId}>
+    // projectId={projectId}
+    <div>
       {" "}
       {/* Pass projectId here */}
       <div
@@ -52,6 +53,6 @@ export default function ProjectPage({ params }) {
           <h1>Project not found</h1>
         )}
       </div>
-    </RootLayout>
+    </div>
   );
 }

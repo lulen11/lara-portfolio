@@ -41,6 +41,7 @@
     }
     .imageWrapper {
       position: relative;
+      margin: 0 auto;
       img {
         width: 100%;
         height: auto;
@@ -138,6 +139,37 @@
     }
     &:nth-child(8) {
       width: 100%;
+    }
+  }
+}
+.project-worthy {
+  .imageWrapper {
+    &:first-child,
+    &:nth-child(4),
+    &:nth-child(13),
+    &:nth-child(14) {
+      width: 48.5%;
+    }
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      width: 20%;
+    }
+    &:nth-child(8) {
+      width: 100%;
+    }
+    &:nth-child(16) {
+      width: 30%;
+    }
+    &:nth-child(17) {
+      width: 65%;
+    }
+    &:nth-child(13) {
+      img {
+        max-width: 30rem;
+      }
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
