@@ -10,21 +10,21 @@ $sans-serif-font2: "DM Sans", Arial, Helvetica, sans-serif;
 $mono-font: "DM Mono", "Courier New", Courier, monospace;
 
 @mixin bodyFont {
-  font-family: $serif-font;
+  font-family: $sans-serif-font;
   color: colours.$primary-white;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   font-size: 1rem;
   &::selection {
-    background: colours.$primary-red;
-    color: colours.$primary-blue;
+    background: #91963870;
+    color: colours.$ocean;
   }
 }
 
 @mixin headingFontLarge {
   font-family: $sans-serif-font;
   // font-size: 4vw;
-  font-size: clamp(1rem, 6vw, 7rem);
+  font-size: clamp(1rem, 6vw, 4rem);
   line-height: 1.4;
   color: colours.$forest-black;
   font-weight: 350;
@@ -36,7 +36,7 @@ $mono-font: "DM Mono", "Courier New", Courier, monospace;
 @mixin headingFontMedium {
   font-family: $sans-serif-font;
   // font-size: 5vw;
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: clamp(1rem, 3vw, 2.5rem);
   line-height: 1.4;
   color: colours.$forest-black;
   font-weight: 350;

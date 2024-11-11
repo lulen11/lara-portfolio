@@ -1,6 +1,6 @@
+import Link from "next/link";
 import projects from "../../../content/projectsContent";
 import styles from "./ProjectPage.module.scss";
-// import RootLayout from "@/app/layout";
 
 export async function generateMetadata({ params }) {
   const { projectId } = params;
@@ -18,11 +18,15 @@ export default function ProjectPage({ params }) {
   const { projectId } = params;
   const project = projects[projectId];
 
+  const projectKeys = Object.keys(projects);
+  const projectIndex = projectKeys.indexOf(projectId);
+
+  const nextProjectIndex = (projectIndex + 1) % projectKeys.length;
+  const nextProjectId = projectKeys[nextProjectIndex];
+
   return (
     // projectId={projectId}
     <div>
-      {" "}
-      {/* Pass projectId here */}
       <div
         className={`${styles.projectPage} ${
           projectId ? styles[`project-${projectId}`] : ""
@@ -33,6 +37,11 @@ export default function ProjectPage({ params }) {
             <div className={styles.projectContent}>
               <h1>{project.title}</h1>
               <p>{project.description}</p>
+              <div className={styles.nextProjectLink}>
+                <Link href={`/${nextProjectId}`}>
+                  View another project <span>&#10549;</span>
+                </Link>
+              </div>
             </div>
             <div className={styles.projectImages}>
               {project.images && project.images.length > 0 ? (

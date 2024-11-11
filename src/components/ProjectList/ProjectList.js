@@ -10,8 +10,8 @@ export default function ProjectList({ projects }) {
   const handleMouseMove = (e, key) => {
     // Calculate the movement based on the mouse position relative to the element
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20; // Adjust the range as needed
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 10; // Adjust the range as needed
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 10;
 
     // Update the hover effect state for the specific item
     setHoverEffect((prev) => ({

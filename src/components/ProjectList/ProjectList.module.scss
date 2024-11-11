@@ -38,6 +38,10 @@
       left: 20rem;
       bottom: -30rem;
     }
+    @media only screen and (min-width: globals.$md) {
+      left: 35rem;
+      bottom: -35rem;
+    }
 
     img {
       width: auto;
@@ -46,10 +50,6 @@
       @media only screen and (min-width: globals.$sm) {
         height: 100vh;
       }
-    }
-
-    @media only screen and (min-width: globals.$lg) {
-      left: 35rem;
     }
   }
 
@@ -61,7 +61,8 @@
         bottom: -15rem;
       }
       @media only screen and (min-width: globals.$md-lg) {
-        left: 35rem;
+        left: 40rem;
+        bottom: -25rem;
       }
     }
     &:hover .projectName {
@@ -80,6 +81,9 @@
       @media only screen and (min-width: globals.$sm) {
         bottom: -10rem;
       }
+      @media only screen and (min-width: globals.$md-lg) {
+        bottom: -20rem;
+      }
     }
   }
 
@@ -90,6 +94,7 @@
       }
       @media only screen and (min-width: globals.$md) {
         left: 35rem;
+        bottom: -23rem;
       }
     }
     &:hover .projectName {
@@ -98,6 +103,9 @@
   }
   &:nth-child(6n) {
     .projectThumb {
+      @media only screen and (min-width: globals.$md) {
+        bottom: -14rem;
+      }
       // bottom: -20rem;
       // height: 150vh;
       // bottom: -10rem;

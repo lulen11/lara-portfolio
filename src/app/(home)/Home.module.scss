@@ -1,11 +1,11 @@
 @use "../../styles/globals" as globals;
 
 .home {
-  margin-top: 9rem;
+  margin-top: 5rem;
   padding: 1rem;
   @media only screen and (min-width: globals.$md) {
     // width: 90%;
-    margin-top: 10rem;
+    // margin-top: 10rem;
   }
   @media only screen and (min-width: globals.$lg) {
     // width: 80%;
@@ -13,7 +13,19 @@
   }
   .intro {
     @include globals.headingFontLarge;
-    max-width: globals.$md-lg;
+    max-width: globals.$md;
+    position: relative;
+    z-index: 1;
+    text-wrap: balance;
+
+    .link {
+      text-decoration: none;
+      color: globals.$mango;
+      &::selection {
+        background: globals.$mango;
+        color: globals.$botanical-green;
+      }
+    }
   }
 }
 
@@ -21,7 +33,7 @@
 .projectList {
   position: relative;
   @media only screen and (min-width: globals.$sm-md) {
-    margin-left: 2.5rem;
+    // margin-left: 2.5rem;
   }
 }
 

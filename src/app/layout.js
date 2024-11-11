@@ -22,8 +22,8 @@ export default function RootLayout({ children, projectId }) {
           <Header projectId={projectId} />
           <main className={styles.main}>
             <div>{children}</div>
+            <Footer />
           </main>
-          <Footer />
           {/* <PageTransition /> */}
         </body>
       </html>

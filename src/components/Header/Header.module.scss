@@ -31,14 +31,16 @@
   &Wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   &Name,
   &Contact {
     font-family: globals.$sans-serif-font;
     font-size: 0.9rem;
     font-weight: 100;
+    line-height: 1.4;
     color: globals.$forest-black;
+    margin: 0;
     @media only screen and (min-width: globals.$sm-md) {
       display: inline-block;
     }
@@ -93,6 +95,8 @@
     text-decoration: none;
     transition: globals.$smooth-transition;
     animation: dizzyColors 5s ease-in-out infinite;
+    font-weight: 400;
+
     &:hover {
       color: globals.$tangerine-red;
     }
