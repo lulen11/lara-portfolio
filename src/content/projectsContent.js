@@ -20,6 +20,13 @@ const projects = {
       "website-vcf.jpg",
       "website-vcf2.jpg",
     ],
+    links: [
+      { text: "Visit Code Like a Girl", url: "https://www.codelikeagirl.com" },
+      {
+        text: "Event Page",
+        url: "https://www.codelikeagirl.com/virtual-summit",
+      },
+    ],
   },
   "verve-super": {
     title: "Verve Super",
