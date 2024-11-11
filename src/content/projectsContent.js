@@ -78,6 +78,16 @@ const projects = {
     title: "Byron Writers Fest",
     description: "Detailed description of BWF",
     thumbImage: "thumb-bwf@2x.png",
+    images: [
+      "panel1.jpg ",
+      "web-authors.jpg ",
+      "web-stories.jpg ",
+      "web-about2.jpg",
+      "web-workshops.jpg ",
+      "web-home.jpg ",
+      "list.png",
+      "web-about1.jpg ",
+    ],
   },
   worthy: {
     title: "Worthy",
