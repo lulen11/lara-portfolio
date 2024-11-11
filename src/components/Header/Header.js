@@ -1,4 +1,5 @@
 "use client";
+import TypedHeading from "../../components/TypedHeading/TypedHeading";
 import { useState, useEffect } from "react";
 import React from "react";
 
@@ -29,7 +30,8 @@ export default function Header({ projectId }) {
         <h1 className={styles.headerName}>
           <strong>Lara Salameh</strong>
           <span>&nbsp;</span>
-          <strong>Designer & Developer</strong>
+
+          <TypedHeading />
         </h1>
         <a href="mailto:hello@larasalameh.com" className={styles.headerContact}>
           hello@larasalameh.com

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import TypedHeading from "../../components/TypedHeading/TypedHeading";
 import ProjectList from "../../components/ProjectList/ProjectList";
 import projects from "../../content/projectsContent";
 import styles from "./Home.module.scss";
@@ -17,8 +16,8 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1 className={styles.intro}>
-        Hello! My name&apos;s Lara. I&apos;m <TypedHeading /> with over 12 years
-        of experience in designing and developing intuitive, user-centric
+        Hello! My name&apos;s Lara. I&apos;m a frontend designer with over 12
+        years of experience in designing and developing intuitive, user-centric
         digital products.
         {/* My skillset is in UX design, frontend development, and
         project management for startups, not-for-profits and organisations. */}

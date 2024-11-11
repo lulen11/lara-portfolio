@@ -6,21 +6,21 @@ const TypedHeading = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        "a frontend designer",
+        "UX designer",
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        "a frontend developer",
+        "Frontend developer",
         1000,
-        "a creative technlogist",
+        "Creative technlogist",
         1000,
-        "all-rounder",
+        "All-rounder",
         1000,
       ]}
-      wrapper="span"
+      wrapper="strong"
       speed={1}
       deletionSpeed={1}
       cursor={false}
       style={{ display: "inline-block" }}
-      repeat={1}
+      repeat={Infinity}
     />
   );
 };

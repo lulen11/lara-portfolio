@@ -2,16 +2,18 @@
 
 .home {
   margin-top: 9rem;
+  padding: 1rem;
   @media only screen and (min-width: globals.$md) {
-    width: 90%;
+    // width: 90%;
     margin-top: 10rem;
   }
   @media only screen and (min-width: globals.$lg) {
-    width: 80%;
-    max-width: globals.$md-lg;
+    // width: 80%;
+    // max-width: globals.$md-lg;
   }
   .intro {
     @include globals.headingFontLarge;
+    max-width: globals.$md-lg;
   }
 }
 

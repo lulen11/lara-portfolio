@@ -1,57 +1,67 @@
 @use "../../styles/globals" as globals;
 
 .project {
-  //   overflow: hidden;
   margin: 1rem 0;
   transition: globals.$smooth-transition;
-  position: relative;
 
   &List {
-    position: relative;
     list-style: none;
     padding: 0;
     margin-bottom: 4rem;
+    z-index: 1;
   }
 
   &Name {
     @include globals.headingFontMedium;
     text-decoration: none;
     z-index: 0;
-    position: relative;
+    z-index: 1;
   }
 
   &Thumb {
     opacity: 0;
     position: absolute;
     z-index: -1;
-    // top: 0;
-    // left: 0rem;
     transition: opacity 0.5s ease-in-out, transform 0.1s ease-out;
-    height: 30rem;
+    height: 100vw;
     width: auto;
 
-    margin-right: -18rem;
-    left: 26rem;
-    bottom: -10rem;
+    left: 6rem;
+    bottom: -5rem;
 
-    img {
-      width: 100%;
-      height: auto;
-      position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media only screen and (min-width: globals.$sm) {
+      left: 20rem;
+      bottom: -30rem;
     }
 
-    @media only screen and (min-width: globals.$md) {
-      // right: -40rem;
+    img {
+      width: auto;
+      height: 50vh;
+      position: relative;
+      @media only screen and (min-width: globals.$sm) {
+        height: 100vh;
+      }
+    }
+
+    @media only screen and (min-width: globals.$lg) {
+      left: 35rem;
     }
   }
 
   &:nth-child(2n),
+  &:nth-child(3n),
   &:nth-child(4n) {
     .projectThumb {
-      bottom: -1rem;
-
-      @media only screen and (min-width: globals.$md) {
-        // right: -16rem;
+      @media only screen and (min-width: globals.$sm) {
+        bottom: -15rem;
+      }
+      @media only screen and (min-width: globals.$md-lg) {
+        left: 35rem;
       }
     }
     &:hover .projectName {
@@ -60,24 +70,38 @@
   }
 
   &:nth-child(3n) {
-    .projectThumb {
-      bottom: 3rem;
-      @media only screen and (min-width: globals.$md) {
-        // right: -26rem;
-      }
-    }
     &:hover .projectName {
       color: globals.$ocean;
     }
   }
 
+  &:nth-child(4n) {
+    .projectThumb {
+      @media only screen and (min-width: globals.$sm) {
+        bottom: -10rem;
+      }
+    }
+  }
+
   &:nth-child(5n) {
     .projectThumb {
-      // bottom: -3rem;
-      // right: 0rem;
+      @media only screen and (min-width: globals.$sm) {
+        bottom: -13rem;
+      }
+      @media only screen and (min-width: globals.$md) {
+        left: 35rem;
+      }
     }
     &:hover .projectName {
       color: globals.$botanical-green;
+    }
+  }
+  &:nth-child(6n) {
+    .projectThumb {
+      // bottom: -20rem;
+      // height: 150vh;
+      // bottom: -10rem;
+      // right: 0rem;
     }
   }
 }

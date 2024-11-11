@@ -22,7 +22,11 @@ export default function ProjectPage({ params }) {
     <RootLayout projectId={projectId}>
       {" "}
       {/* Pass projectId here */}
-      <div className={styles.projectPage}>
+      <div
+        className={`${styles.projectPage} ${
+          projectId ? styles[`project-${projectId}`] : ""
+        }`}
+      >
         {project ? (
           <>
             <div className={styles.projectContent}>

@@ -21,8 +21,11 @@
     }
   }
   &Content {
-    padding: 0 2rem 5rem;
+    padding: 0 1rem 5rem;
     border: 2px solid blue;
+    @media only screen and (min-width: globals.$md) {
+      padding: 0 2rem 5rem;
+    }
   }
   &Images {
     display: flex;
@@ -30,9 +33,12 @@
     justify-content: space-between;
     align-items: flex-start;
     // background-color: globals.$cloud-grey;
-    padding: 2rem;
+    padding: 1rem;
     max-width: globals.$page-wrapper;
     margin: 0 auto;
+    @media only screen and (min-width: globals.$md) {
+      padding: 2rem;
+    }
     .imageWrapper {
       position: relative;
       img {
@@ -67,6 +73,58 @@
       &:nth-child(9) {
         align-self: flex-end;
       }
+    }
+  }
+}
+
+.project-verve-super {
+  .imageWrapper {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(7),
+    &:nth-child(8) {
+      width: 48.5%;
+    }
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 24%;
+    }
+    &:nth-child(9) {
+      width: 100%;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+  }
+}
+.project-airtime {
+  .imageWrapper {
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+      width: 20%;
+      max-width: 10rem;
+      align-self: center;
+    }
+    &:nth-child(10),
+    &:nth-child(11) {
+      width: 100%;
+      // max-width: 40rem;
+      margin: 0 auto;
+    }
+  }
+}
+.project-aime-mentoring {
+  .imageWrapper {
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10) {
+      width: 48.5%;
     }
   }
 }
