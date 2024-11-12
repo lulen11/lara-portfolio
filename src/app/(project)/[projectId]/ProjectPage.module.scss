@@ -153,6 +153,18 @@
       &:last-child::after {
         content: none;
       }
+
+      @media only screen and (max-width: globals.$sm-md) {
+        &::before {
+          content: "\02733";
+          display: inline-block;
+          margin-right: 0.75rem;
+          opacity: 0.7;
+        }
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }

@@ -11,11 +11,13 @@ const TypedHeading = () => {
         1000,
         "She's a creative technlogist",
         1000,
+        "She's a project lead & manager",
+        1000,
         "She's an all-rounder",
         1000,
       ]}
       wrapper="strong"
-      speed={1}
+      speed={200}
       deletionSpeed={1}
       cursor={false}
       style={{ display: "inline-block" }}

@@ -5,11 +5,14 @@
   padding: 1rem;
   .intro {
     @include globals.headingFontLarge;
-    letter-spacing: -0.15rem;
     max-width: globals.$md;
     position: relative;
     z-index: 1;
     text-wrap: balance;
+
+    @media only screen and (min-width: globals.$sm-md) {
+      letter-spacing: -0.15rem;
+    }
 
     .link {
       text-decoration: none;
