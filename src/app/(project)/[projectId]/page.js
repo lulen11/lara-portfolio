@@ -36,7 +36,7 @@ export default function ProjectPage({ params }) {
           <>
             <div className={styles.projectContent}>
               <h1>{project.title}</h1>
-              <p>{project.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: project.description }} />
               <div className={styles.nextProjectLink}>
                 <Link href={`/${nextProjectId}`}>
                   View another project <span>&#10549;</span>
