@@ -28,7 +28,7 @@ $mono-font: "DM Mono", "Courier New", Courier, monospace;
   font-size: clamp(1rem, 7vw, 3.75rem);
   line-height: 1.4;
   color: colours.$forest-black;
-  font-weight: 350;
+  font-weight: 300;
 
   @media only screen and (min-width: breakpoints.$sm-md) {
     letter-spacing: -0.05rem;
@@ -45,7 +45,7 @@ $mono-font: "DM Mono", "Courier New", Courier, monospace;
   font-size: clamp(1rem, 3vw, 2rem);
   line-height: 1.5;
   color: colours.$forest-black;
-  font-weight: 350;
+  font-weight: 300;
   @media only screen and (min-width: breakpoints.$sm-md) {
     letter-spacing: -0.02rem;
   }
