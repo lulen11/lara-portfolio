@@ -24,8 +24,8 @@ const Home = () => {
         >
           *
         </a>{" "}
-        I love creating engaging impactful experiences & I've been doing it for
-        12+ years. Here's some recent work:
+        I love creating engaging impactful experiences & I&apos;ve been doing it
+        for 12+ years. Here&apos;s some recent work:
         {/* with 12+ years of experience in building digital products. I sit at the
         intersection of design & development, and I love creating engaging
         impactful experiences. */}
