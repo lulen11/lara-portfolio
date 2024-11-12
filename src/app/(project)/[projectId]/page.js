@@ -44,7 +44,7 @@ export default function ProjectPage({ params }) {
               <h1>{project.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: project.description }} />
               <div className={styles.nextProjectLink}>
-                <Link href={`/${nextProjectId}`}>
+                <Link href={`/${nextProjectId}`} scroll={true}>
                   View another project <span>&#10549;</span>
                 </Link>
               </div>
@@ -75,7 +75,7 @@ export default function ProjectPage({ params }) {
               )}
             </div>
             <div className={`${styles.nextProjectLink} ${styles.bottomLink}`}>
-              <Link href={`/${nextProjectId}`}>
+              <Link href={`/${nextProjectId}`} scroll={true}>
                 See something else I&apos;ve worked on <span>&#x27F6;</span>
               </Link>
             </div>
