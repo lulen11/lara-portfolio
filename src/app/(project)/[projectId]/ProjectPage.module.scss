@@ -44,6 +44,16 @@
       color: globals.$forest-black;
       max-width: 45rem;
       text-wrap: pretty;
+
+      a {
+        color: globals.$forest-black;
+        text-underline-position: under;
+        text-underline-offset: -2px;
+
+        &:hover {
+          color: globals.$olive;
+        }
+      }
     }
   }
   &Content {
