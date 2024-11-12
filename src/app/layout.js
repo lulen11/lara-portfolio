@@ -4,8 +4,9 @@ import styles from "./Layout.module.scss";
 // import PageTransition from "@/components/PageTransition/PageTransition";
 
 export const metadata = {
-  title: "Lara Salameh's Great and Good Portfolio",
-  description: "My portfolio",
+  title: "Lara Salameh | Creative Technologist",
+  description:
+    "Lara Salameh is a senior UX designer & frontend developer. She loves working on projects that are good for people & planet. She loves creating immersive experiences that leave a positive impact on a person. Based in Melbourne, Australia, here's a selection of her recent work.",
   icons: {
     icon: "/images/favicon@2x.ico",
   },
