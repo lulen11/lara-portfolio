@@ -1,0 +1,17 @@
+// global.scss
+@forward "colours";
+@forward "typography";
+@forward "motion";
+@forward "breakpoints";
+
+.layout {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  .layout {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}

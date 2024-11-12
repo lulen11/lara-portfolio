@@ -1,0 +1,16 @@
+@use "../../styles/globals" as globals;
+
+.footer {
+  padding: 1rem;
+  text-align: left;
+  bottom: 0;
+  position: relative;
+  margin-top: 2rem;
+  a {
+    transition: globals.$smooth-transition;
+    margin-right: 0.25rem;
+    &:hover svg path {
+      fill: globals.$tangerine-red;
+    }
+  }
+}

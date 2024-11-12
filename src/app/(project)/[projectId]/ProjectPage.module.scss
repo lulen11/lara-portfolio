@@ -1,0 +1,317 @@
+@use "../../../styles/globals" as globals;
+
+@keyframes dizzyColors {
+  0%,
+  100% {
+    background-color: globals.$lilac;
+    color: globals.$forest-black;
+  }
+  20% {
+    background-color: globals.$mango;
+  }
+  35% {
+    background-color: globals.$tangerine-red;
+    color: globals.$primary-white;
+  }
+  50% {
+    background-color: globals.$candy;
+  }
+  75% {
+    background-color: globals.$olive;
+    color: globals.$primary-white;
+  }
+}
+
+.project {
+  &Page {
+    margin: 0;
+    margin-top: 7rem;
+    @media only screen and (min-width: globals.$md) {
+      margin-top: 10rem;
+    }
+    h1 {
+      @include globals.headingFontLarge;
+      margin: 0;
+      &::selection {
+        background: #e9e3f3;
+        color: globals.$tangerine-red;
+      }
+    }
+
+    p {
+      @include globals.bodyFont;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      color: globals.$forest-black;
+      max-width: 45rem;
+      text-wrap: pretty;
+
+      a {
+        color: globals.$forest-black;
+        text-underline-position: under;
+        text-underline-offset: -2px;
+
+        &:hover {
+          color: globals.$olive;
+        }
+      }
+    }
+  }
+  &Content {
+    position: relative;
+    padding: 0 1rem 5rem;
+    @media only screen and (min-width: globals.$md) {
+      padding: 0 2rem 5rem;
+    }
+  }
+  &Images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    max-width: globals.$page-wrapper;
+    margin: 0 auto;
+    @media only screen and (min-width: globals.$md) {
+      padding: 2rem;
+    }
+    .imageWrapper {
+      position: relative;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12) {
+        width: 48.5%;
+      }
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        width: 32%;
+      }
+
+      &:nth-child(8),
+      &:nth-child(9) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &Links {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    @media only screen and (min-width: globals.$sm-md) {
+      display: flex;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.25rem 0 0.1rem 0;
+        margin-right: 1rem;
+        font-family: globals.$sans-serif-font;
+        font-size: 0.9rem;
+        font-weight: 100;
+        line-height: 1.4;
+        transition: globals.$smooth-transition;
+        color: globals.$forest-black;
+        border-bottom: 1.25px solid transparent;
+
+        &:hover {
+          color: globals.$olive;
+          border-bottom: 1.25px solid globals.$olive;
+        }
+        &::selection {
+          background: globals.$olive-transparent;
+          color: globals.$ocean;
+        }
+      }
+
+      &::after {
+        content: "\02733";
+        display: inline-block;
+        margin-right: 1.25rem;
+        opacity: 0.7;
+      }
+      &:last-child::after {
+        content: none;
+      }
+
+      @media only screen and (max-width: globals.$sm-md) {
+        &::before {
+          content: "\02733";
+          display: inline-block;
+          margin-right: 0.75rem;
+          opacity: 0.7;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.nextProjectLink {
+  position: fixed;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  top: 15rem;
+  right: 1rem;
+  z-index: 1;
+
+  a {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    border-radius: 99px;
+    padding: 0.25rem 1.5rem 0.35rem;
+    font-family: globals.$sans-serif-font;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.4;
+    transition: globals.$smooth-transition;
+    background-color: globals.$lilac;
+    color: globals.$forest-black;
+    &:hover {
+      animation: dizzyColors 5s ease-in-out infinite;
+      color: globals.$primary-white;
+    }
+    span {
+      font-size: 0.8rem;
+      position: relative;
+
+      top: 0.05rem;
+      transform: rotate(-27deg);
+      display: inline-block;
+      margin: 0 0 0 0.3rem;
+    }
+  }
+
+  &.bottomLink {
+    position: relative;
+    transform: none;
+    top: initial;
+    right: initial;
+    margin: -1rem 0 0 1rem;
+    z-index: 0;
+    @media only screen and (min-width: globals.$sm-md) {
+      margin: -2rem 0 0 2.25rem;
+    }
+    span {
+      transform: none;
+      top: -0.1rem;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}
+.project-verve-super {
+  .imageWrapper {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(7),
+    &:nth-child(8) {
+      width: 48.5%;
+    }
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 24%;
+    }
+    &:nth-child(9) {
+      width: 100%;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+  }
+}
+.project-airtime {
+  .imageWrapper {
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+      width: 20%;
+      max-width: 10rem;
+      align-self: center;
+    }
+    &:nth-child(10),
+    &:nth-child(11) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.project-aime-mentoring {
+  .imageWrapper {
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10) {
+      width: 48.5%;
+    }
+  }
+}
+.project-bwf {
+  .imageWrapper {
+    &:nth-child(6),
+    &:nth-child(7) {
+      width: 48.5%;
+      align-self: center;
+    }
+    &:nth-child(8) {
+      width: 100%;
+    }
+  }
+}
+.project-worthy {
+  .imageWrapper {
+    &:first-child,
+    &:nth-child(4),
+    &:nth-child(13),
+    &:nth-child(14) {
+      width: 48.5%;
+    }
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      width: 20%;
+    }
+    &:nth-child(8) {
+      width: 100%;
+    }
+    &:nth-child(16) {
+      width: 30%;
+    }
+    &:nth-child(17) {
+      width: 65%;
+    }
+    &:nth-child(13) {
+      img {
+        max-width: 30rem;
+      }
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

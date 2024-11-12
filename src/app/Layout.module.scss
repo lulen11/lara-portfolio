@@ -1,0 +1,19 @@
+@use "../styles/globals" as globals;
+
+.layout {
+  box-sizing: border-box;
+  background-color: globals.$cream;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+
+  &.project-code-like-a-girl {
+    background-color: var(--page-color);
+  }
+}
+
+.main {
+  padding: 0;
+  overflow: hidden;
+}

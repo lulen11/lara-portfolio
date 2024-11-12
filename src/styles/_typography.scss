@@ -1,0 +1,57 @@
+@use "../styles/colours" as colours;
+@use "../styles/breakpoints" as breakpoints;
+
+// TODO: reduce amount of fonts imported once design finalised
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,500;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$serif-font: "Cormorant Garamond", Courier, serif;
+$sans-serif-font: "Rubik", Arial, Helvetica, sans-serif;
+$sans-serif-font2: "DM Sans", Arial, Helvetica, sans-serif;
+$mono-font: "DM Mono", "Courier New", Courier, monospace;
+
+@mixin bodyFont {
+  font-family: $sans-serif-font;
+  color: colours.$primary-white;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.4;
+  &::selection {
+    background: colours.$olive-transparent;
+    color: colours.$ocean;
+  }
+}
+
+@mixin headingFontLarge {
+  font-family: $sans-serif-font;
+  // font-size: 4vw;
+  font-size: clamp(1rem, 7vw, 3.75rem);
+  line-height: 1.4;
+  color: colours.$forest-black;
+  font-weight: 350;
+
+  @media only screen and (min-width: breakpoints.$sm-md) {
+    letter-spacing: -0.05rem;
+  }
+
+  &::selection {
+    background: colours.$mango;
+    color: colours.$botanical-green;
+  }
+}
+@mixin headingFontMedium {
+  font-family: $sans-serif-font;
+  // font-size: 5vw;
+  font-size: clamp(1rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: colours.$forest-black;
+  font-weight: 350;
+  @media only screen and (min-width: breakpoints.$sm-md) {
+    letter-spacing: -0.02rem;
+  }
+
+  &::selection {
+    background: colours.$olive;
+    color: colours.$candy;
+  }
+}
