@@ -35,6 +35,11 @@ export default function ProjectPage({ params }) {
         {project ? (
           <>
             <div className={styles.projectContent}>
+              {/* <div className={styles.linkHome}>
+                <Link href={`/`}>
+                  <span>&#x27F5;</span> Go back home
+                </Link>
+              </div> */}
               <h1>{project.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: project.description }} />
               <div className={styles.nextProjectLink}>

@@ -1,8 +1,14 @@
 @use "../../styles/globals" as globals;
 
 .home {
-  margin-top: 5rem;
-  padding: 1rem;
+  margin-top: 7rem;
+  padding: 0.6rem;
+
+  @media only screen and (min-width: globals.$sm-md) {
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+
   .intro {
     @include globals.headingFontLarge;
     max-width: globals.$md;

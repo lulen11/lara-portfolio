@@ -29,8 +29,8 @@ export default function Header({ projectId }) {
       <div className={styles.headerWrapper}>
         <h1 className={styles.headerName}>
           <Link href="/">
-            <strong>Lara Salameh</strong>
-            <span>&nbsp;</span>
+            <span>Lara Salameh</span>
+            {/* <span>&nbsp;</span> */}
 
             <TypedHeading />
           </Link>
