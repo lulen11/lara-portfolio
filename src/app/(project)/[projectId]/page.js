@@ -46,7 +46,9 @@ export default function ProjectPage({ params }) {
                 <ul className={styles.projectLinks}>
                   {project.links.map((link, index) => (
                     <li key={index}>
-                      <Link href={link.url}>{link.text}</Link>
+                      <Link href={link.url} target="_blank">
+                        {link.text}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -57,7 +59,7 @@ export default function ProjectPage({ params }) {
                 project.images.map((image, index) => (
                   <div key={index} className={styles.imageWrapper}>
                     <img
-                      src={`/images/projects/${projectId}/${image}`} // Construct the path dynamically
+                      src={`/images/projects/${projectId}/${image}`}
                       alt={`${project.title} Image ${index + 1}`}
                     />
                   </div>

@@ -41,20 +41,8 @@ export default function ProjectList({ projects }) {
           <Link className={styles.projectName} href={`/${key}`}>
             {projects[key].title}
           </Link>
-          {/* <p>{projects[key].description}</p> */}
           <div className={styles.projectThumb}>
-            <img
-              src={`/images/projects/${projects[key].thumbImage}`} // Construct the path dynamically
-            />
-            {/* <Image
-              src={projects[key].image}
-              alt="Project Thumb"
-              sizes="300px"
-              fill
-              style={{
-                objectFit: "contain",
-              }}
-            /> */}
+            <img src={`/images/projects/${projects[key].thumbImage}`} />
           </div>
         </li>
       ))}

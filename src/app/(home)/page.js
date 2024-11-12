@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1 className={styles.intro}>
-        Hello! My name&apos;s Lara. I&apos;m a frontend designer
+        Hello! I&apos;m Lara, a frontend designer
         <a
           href="https://bradfrost.com/blog/post/frontend-design/"
           target="_blank"
@@ -24,8 +24,12 @@ const Home = () => {
         >
           *
         </a>{" "}
-        with over 12 years of experience in designing and developing intuitive,
-        user-centric digital products.
+        {/* with 12+ years of experience in building digital products. I sit at the
+        intersection of design & development, and I love creating engaging
+        impactful experiences. */}
+        with 12+ years in UX design & development. I sit at the intersection of
+        these fields, and I love creating engaging impactful experiences.
+        {/* , where I design user experiences and bring those designs to life through frontend code. I work remotely, based in Melbourne, Australia. */}
         {/* My skillset is in UX design, frontend development, and
         project management for startups, not-for-profits and organisations. */}
         {/* Skilled in leveraging modern technologies like React, Node.js, Gatsby,

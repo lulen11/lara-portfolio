@@ -30,5 +30,3 @@ export default function RootLayout({ children, projectId }) {
     </>
   );
 }
-
-// export default Layout;

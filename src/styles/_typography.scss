@@ -25,9 +25,10 @@ $mono-font: "DM Mono", "Courier New", Courier, monospace;
 @mixin headingFontLarge {
   font-family: $sans-serif-font;
   // font-size: 4vw;
-  font-size: clamp(1rem, 6vw, 4rem);
+  font-size: clamp(1rem, 5vw, 3.75rem);
   line-height: 1.4;
   color: colours.$forest-black;
+  letter-spacing: -0.05rem;
   font-weight: 350;
   &::selection {
     background: colours.$mango;
@@ -37,9 +38,10 @@ $mono-font: "DM Mono", "Courier New", Courier, monospace;
 @mixin headingFontMedium {
   font-family: $sans-serif-font;
   // font-size: 5vw;
-  font-size: clamp(1rem, 3vw, 2.5rem);
-  line-height: 1.4;
+  font-size: clamp(1rem, 3vw, 2rem);
+  line-height: 1.5;
   color: colours.$forest-black;
+  letter-spacing: -0.02rem;
   font-weight: 350;
 
   &::selection {

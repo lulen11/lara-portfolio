@@ -68,7 +68,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    // background-color: globals.$cloud-grey;
     padding: 1rem;
     max-width: globals.$page-wrapper;
     margin: 0 auto;
@@ -178,8 +177,6 @@
     transition: globals.$smooth-transition;
     background-color: globals.$lilac;
     color: globals.$forest-black;
-    // border-bottom: 2px solid globals.$forest-black;
-    // animation: dizzyColors 5s ease-in-out infinite;
     &:hover {
       animation: dizzyColors 5s ease-in-out infinite;
       color: globals.$primary-white;
@@ -204,10 +201,6 @@
     z-index: 0;
     @media only screen and (min-width: globals.$sm-md) {
       margin: -2rem 0 0 2.25rem;
-    }
-    a {
-      // background-color: globals.$oyster-grey;
-      // color: globals.$forest-black;
     }
     span {
       transform: none;
@@ -251,7 +244,6 @@
     &:nth-child(10),
     &:nth-child(11) {
       width: 100%;
-      // max-width: 40rem;
       margin: 0 auto;
     }
   }
