@@ -133,7 +133,7 @@
     color: globals.$candy;
   }
   .projectThumb {
-    @media only screen and (min-width: globals.$md) {
+    @media only screen and (min-width: globals.$sm-md) {
       opacity: 1;
     }
   }

@@ -25,10 +25,8 @@
 .project {
   &Page {
     margin: 0;
-    margin-top: 7rem;
-    @media only screen and (min-width: globals.$md) {
-      margin-top: 10rem;
-    }
+    margin-top: 10rem;
+
     h1 {
       @include globals.headingFontLarge;
       margin: 0;
@@ -58,7 +56,7 @@
   }
   &Content {
     position: relative;
-    padding: 0 1rem 5rem;
+    padding: 0 0.6rem 5rem;
     @media only screen and (min-width: globals.$md) {
       padding: 0 2rem 5rem;
     }
@@ -168,7 +166,8 @@
     }
   }
 }
-.nextProjectLink {
+.nextProjectLink,
+.linkHome {
   position: fixed;
   transform: rotate(-90deg);
   transform-origin: bottom right;
@@ -223,6 +222,27 @@
     }
   }
 }
+
+.linkHome {
+  position: static;
+  transform: none;
+  margin: 0;
+
+  a {
+    font-size: 0.85rem;
+    padding: 0;
+    background-color: transparent;
+    color: globals.$forest-black;
+    position: relative;
+    span {
+      transform: none;
+      top: -0.15rem;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
 .project-verve-super {
   .imageWrapper {
     &:nth-child(1),
