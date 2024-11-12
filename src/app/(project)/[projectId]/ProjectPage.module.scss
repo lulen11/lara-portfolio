@@ -156,7 +156,7 @@
 
       @media only screen and (max-width: globals.$sm-md) {
         &::before {
-          content: "\02733";
+          content: "\02769";
           display: inline-block;
           margin-right: 0.75rem;
           opacity: 0.7;
@@ -196,11 +196,12 @@
     span {
       font-size: 0.8rem;
       position: relative;
-
       top: 0.05rem;
-      transform: rotate(-27deg);
       display: inline-block;
       margin: 0 0 0 0.3rem;
+      @media only screen and (min-width: globals.$sm-md) {
+        transform: rotate(-27deg);
+      }
     }
   }
 

@@ -127,11 +127,14 @@
   }
 }
 
-.project:hover {
+.project:hover,
+.project:active {
   .projectName {
     color: globals.$candy;
   }
   .projectThumb {
-    opacity: 1;
+    @media only screen and (min-width: globals.$md) {
+      opacity: 1;
+    }
   }
 }
