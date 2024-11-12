@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
       project?.title || "... oop no work here"
     }`,
     description:
-      "Lara Salameh is a senior UX designer & frontend developer. She loves working on projects that are good for people & planet. She loves creating immersive experiences that leave a positive impact on a person. Based in Melbourne, Australia, here's a selection of her recent work",
+      "Lara Salameh is a senior UX designer, frontend developer, an all-round creative technologist. She loves working on projects that are good for people & planet. She loves creating digital experiences that leave a positive impact on a person. Based in Melbourne, Australia, here's a selection of her recent work",
   };
 }
 
