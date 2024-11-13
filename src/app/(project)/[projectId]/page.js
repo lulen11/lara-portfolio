@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import projects from "../../../content/projectsContent";
 import styles from "./ProjectPage.module.scss";
@@ -43,11 +44,7 @@ export default function ProjectPage({ params }) {
               </div> */}
               <h1>{project.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: project.description }} />
-              <div className={styles.nextProjectLink}>
-                <Link href={`/${nextProjectId}`}>
-                  View another project <span>&#10549;</span>
-                </Link>
-              </div>
+
               {project.links && (
                 <ul className={styles.projectLinks}>
                   {project.links.map((link, index) => (
@@ -60,15 +57,48 @@ export default function ProjectPage({ params }) {
                 </ul>
               )}
             </div>
+
+            <div className={styles.nextProjectLink}>
+              <Link href={`/${nextProjectId}`}>
+                View another project <span>&#10549;</span>
+              </Link>
+            </div>
+
             <div className={styles.projectImages}>
               {project.images && project.images.length > 0 ? (
                 project.images.map((image, index) => (
-                  <div key={index} className={styles.imageWrapper}>
-                    <img
-                      src={`/images/projects/${projectId}/${image}`}
-                      alt={`${project.title} Image ${index + 1}`}
-                    />
-                  </div>
+                  <React.Fragment key={index}>
+                    <div key={index} className={styles.imageWrapper}>
+                      <img
+                        src={`/images/projects/${projectId}/${image}`}
+                        alt={`${project.title} Image ${index + 1}`}
+                      />
+                    </div>
+                    {/* sometimes inserting a video example */}
+                    {project.videoUrl && index === 1 && (
+                      <div
+                        className={styles.vidWrapper}
+                        style={{
+                          position: "relative",
+                          paddingBottom: "62.7906976744186%",
+                          height: 0,
+                          width: "100%",
+                        }}
+                      >
+                        <iframe
+                          src={project.videoUrl}
+                          allowFullScreen
+                          style={{
+                            position: "absolute",
+                            top: "0",
+                            left: "0",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        ></iframe>
+                      </div>
+                    )}
+                  </React.Fragment>
                 ))
               ) : (
                 <p>No images available for this project.</p>
