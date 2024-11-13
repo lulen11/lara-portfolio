@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import styles from "./Layout.module.scss";
-// import PageTransition from "@/components/PageTransition/PageTransition";
+import PageTransition from "@/components/PageTransition/PageTransition";
 
 export const metadata = {
   title: "Lara Salameh | Creative Technologist",
@@ -11,6 +11,7 @@ export const metadata = {
     icon: "/images/favicon@2x.ico",
   },
 };
+
 export default function RootLayout({ children, projectId }) {
   return (
     <>
@@ -20,12 +21,13 @@ export default function RootLayout({ children, projectId }) {
             projectId ? styles[`project-${projectId}`] : ""
           }`}
         >
-          <Header projectId={projectId} />
-          <main className={styles.main}>
-            <div>{children}</div>
-            <Footer />
-          </main>
-          {/* <PageTransition /> */}
+          <PageTransition>
+            <Header projectId={projectId} />
+            <main className={styles.main}>
+              <div>{children}</div>
+              <Footer />
+            </main>
+          </PageTransition>
         </body>
       </html>
     </>

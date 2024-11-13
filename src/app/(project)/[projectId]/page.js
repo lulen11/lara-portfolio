@@ -44,11 +44,7 @@ export default function ProjectPage({ params }) {
               </div> */}
               <h1>{project.title}</h1>
               <p dangerouslySetInnerHTML={{ __html: project.description }} />
-              <div className={styles.nextProjectLink}>
-                <Link href={`/${nextProjectId}`}>
-                  View another project <span>&#10549;</span>
-                </Link>
-              </div>
+
               {project.links && (
                 <ul className={styles.projectLinks}>
                   {project.links.map((link, index) => (
@@ -60,6 +56,12 @@ export default function ProjectPage({ params }) {
                   ))}
                 </ul>
               )}
+            </div>
+
+            <div className={styles.nextProjectLink}>
+              <Link href={`/${nextProjectId}`}>
+                View another project <span>&#10549;</span>
+              </Link>
             </div>
 
             <div className={styles.projectImages}>

@@ -1,5 +1,12 @@
 @use "../../../styles/globals" as globals;
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes dizzyColors {
   0%,
   100% {
@@ -26,6 +33,7 @@
   &Page {
     margin: 0;
     margin-top: 10rem;
+    position: relative;
 
     h1 {
       @include globals.headingFontLarge;
@@ -57,6 +65,9 @@
   &Content {
     position: relative;
     padding: 0 0.6rem 5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease forwards;
     @media only screen and (min-width: globals.$md) {
       padding: 0 2rem 5rem;
     }
