@@ -166,6 +166,12 @@
     }
   }
 }
+.projectImages:has(.vidWrapper) {
+  .imageWrapper:nth-child(1),
+  .imageWrapper:nth-child(2) {
+    width: 48.5%;
+  }
+}
 .nextProjectLink,
 .linkHome {
   position: fixed;
@@ -239,6 +245,18 @@
       top: -0.15rem;
       position: relative;
       display: inline-block;
+    }
+  }
+}
+.project-code-like-a-girl {
+  .imageWrapper {
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 48.5%;
+    }
+    &:nth-child(7),
+    &:nth-child(8) {
+      width: 100%;
     }
   }
 }

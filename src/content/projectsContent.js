@@ -5,20 +5,23 @@ const projects = {
     description:
       "At Code Like a Girl, I am the Lead UX Designer & Frontend Developer, contributing across various projects between tech and design. I manage and update the main website, built on Gatsby, adapting new pages as projects arise. I also led the UX/UI design for our Internship Platform, conducting stakeholder interviews, user research with interns and partners, and producing designs that align with user needs. In our School of Code, I wrote and delivered two popular coding courses—Foundations of Web Development and Navigating JavaScript—handling everything from content creation to video editing. In all my work at CLG, I'm working to improve UX for our partners, interns and students and to create supportive, accessible and exciting environments for all people to advance in tech.",
     thumbImage: "thumb-clg@2x.png",
+    videoUrl:
+      "https://www.loom.com/embed/64c0eb86762147f6a13b5dc895c1ad3f?sid=a95bc7e9-d551-4136-a22b-b91cd4035216&autoplay=1&hideEmbedTopBar=true",
+
     images: [
+      "social-post.jpg",
+      "social-post2.jpg",
       "product-partners.jpg",
       "product-partners2.jpg",
       "product2.jpg",
       "product1.jpg",
       "website-home.jpg",
-      "social-post.jpg",
-      "social-post2.jpg",
       "website-tab.jpg",
       "website-how1.jpg",
       "website-jobs.jpg",
       "website-how2.jpg",
-      "website-vcf.jpg",
-      "website-vcf2.jpg",
+      // "website-vcf.jpg",
+      // "website-vcf2.jpg",
     ],
     links: [
       { text: "Visit the website", url: "https://www.codelikeagirl.com" },
@@ -37,16 +40,18 @@ const projects = {
     description:
       "This is a freelance project still in progress. <a href='https://www.lunatunes.com.au/' target='_blank' rel='noopener noreferrer'>My talented friend</a> has created the beautiful brand and artwork for Airtime Basketball while I designed the website UX/UI and developed the site. Using <a href='https://prismic.io' target='_blank' rel='noopener noreferrer'>Prismic</a> for a lightweight, scalable and cost-effective approach, I've built this project with Next.js and React, CSS Modules, and ensured clean & maintainable code quality with TypeScript and ESLint. Airtime is scaling as a company quickly and I'm excited to be part of their digital journey.",
     thumbImage: "thumb-airtime@2x.png",
+    videoUrl:
+      "https://www.loom.com/embed/79178832b9c34a1d9140f737aca9333e?sid=532fe273-f6de-4f46-bd03-4af0cca4edaf&autoplay=1&hideEmbedTopBar=true",
     images: [
-      "airtime-web4@2x.jpg",
-      "airtime-web1.png",
       "airtime-web2@2x.png",
+      "airtime-web1a.png",
+      "airtime-web4@2x.jpg",
       "airtime-initials.png",
-      "airtime-web3@2x.jpg",
       "flying-ball1.png",
       "flying-ball2.png",
       "flying-ball3.png",
       "flying-ball4.png",
+      "airtime-web3@2x.jpg",
       "airtime-web5.jpg",
       "airtime-mock@2x.png",
     ],
@@ -70,6 +75,8 @@ const projects = {
     description:
       "In 2021, some fellow creatives and I formed a collective wanting to create digital experiences that put people & planet first. We collaborated to build the new Verve Super website together. My colleague designed the UX/UI while my primary focus was in developing the frontend with one fellow developer. We worked with Wordpress, creating a theme to suit our custom designs. The project was setup with the Twig templating engine, encorporating Tailwind CSS and using Elementor for the client to easily update and add modules as they grew as a company. Below are examples of the UX/UI designs created by my colleague, all of which I developed into lightweight responsive code.",
     thumbImage: "thumb-verve@2x.png",
+    videoUrl:
+      "https://www.loom.com/embed/b9572bf4a377400eb34fe92b8a8e5658?sid=f742c7ee-8235-4cd0-8705-3cc89149a5ec&autoplay=1&hideEmbedTopBar=true",
     images: [
       "verve-website-1.jpg",
       "verve-website-2.jpg",
