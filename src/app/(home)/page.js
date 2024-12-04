@@ -7,7 +7,7 @@ import styles from "./Home.module.scss";
 export const metadata = {
   title: "Lara Salameh's available for work",
   description:
-    "Lara Salameh is a senior UX designer & frontend developer. She loves working on projects that are good for people & planet. She loves creating immersive experiences that leave a positive impact on a person. Based in Melbourne, Australia, here's a selection of her recent work.",
+    "Lara Salameh is a senior XD designer, UX designer and frontend developer. In all her work, she considers the design of the entire experience across different stakeholders and touch points. She loves working on projects that are good for people & planet. She loves creating immersive experiences that leave a positive impact on a person. Based in Melbourne, Australia, here's a selection of her recent work.",
   icons: {
     icon: "/images/favicon@2x.ico",
   },
