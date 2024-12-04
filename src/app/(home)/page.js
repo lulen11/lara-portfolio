@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1 className={styles.intro}>
-        Hello! I&apos;m Lara, a frontend designer.
+        Hello! I&apos;m Lara, an experience &amp; frontend designer.
         <a
           href="https://bradfrost.com/blog/post/frontend-design/"
           target="_blank"

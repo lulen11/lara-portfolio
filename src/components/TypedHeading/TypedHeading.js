@@ -5,6 +5,8 @@ const TypedHeading = () => {
   return (
     <TypeAnimation
       sequence={[
+        "She's an experience designer",
+        1000,
         "She's a UX designer",
         1000,
         "She's a frontend developer",
@@ -12,6 +14,8 @@ const TypedHeading = () => {
         "She's a creative technlogist",
         1000,
         "She's a project lead & manager",
+        1000,
+        "She's a maker of things",
         1000,
         "She's an all-rounder",
         1000,
